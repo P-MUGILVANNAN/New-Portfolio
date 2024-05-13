@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mugilvannan P - PortFolio</title>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="./src/css/style.css">
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("ur12anp6sljc90sJY");
+            })(); 
+            
+            function sendemail() {
+                var email = document.getElementById("email").value;
+                var name = document.getElementById("name").value;
+                // var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+    
+                var templateParams = {
+                    email: email,
+                    name: name,
+                    message: message,
+                    // subject: subject
+                };
+    
+                emailjs.send('service_ku7x7em', 'template_1f8360c', templateParams)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        window.alert("Sent successfully!");
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        window.alert("Failed to send.");
+                    });
+            }
+        </script>
+    </head>
+<body>
+
+    <!-- Side nav -->
+    <nav id="sidebar">
+        <div class="person">
+            <img src="./src/img/Mugil.jpg" alt="">
+            <h4 class="heading-3">MUGILVANNAN P</h4>
+        </div>
+        <ul>
+            <li><a href="#home" class="is-active">Home</a></li>
+            <li><a href="#services">About me</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#reviews">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- // Side nav end -->
+    
+    <!-- Main wrapper -->
+    <main id="content-wrapper">
+
+        <!-- HOME -->
+        <section id="home" class="full-height">
+            <div class="container">
+                <h1 class="heading-1" data-aos="fade-up">MUGILVANNAN P <br/><span class="text-brand">SOFTWARE TRAINER</span></h1>
+                <p data-aos="fade-up" data-aos-delay="100" style="color: black;">A Dedicated software trainer with a passion for empowering individuals to maximize their potential through comprehensive software education. Leveraging 3 months of experience in FIIT Formacion Pvt Ltd, I aim to create dynamic and engaging learning environments where learners can acquire practical skills and deepen their understanding of software applications. By employing innovative teaching methodologies and personalized instruction, I strive to inspire confidence and proficiency in every learner, ultimately contributing to their professional growth and organizational success."</p>
+                <div class="cta" data-aos="fade-up" data-aos-delay="200">
+                    <a href="mailto:mugilvannanpichai02@gmail.com" class="btn">Hire Me</a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mugilvannan-p-215559266" target="_blank"><i class="lab la-linkedin"></i></a>
+                    <a href="https://www.instagram.com/micky_mouse.23/#" target="_blank"><i class="lab la-instagram"></i></a>
+                    <a href="https://github.com/account" target="_blank"><i class="lab la-github"></i></a>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // HOME -->
+
+        <!-- SERVICES -->
+        <section id="services" class="full-height">
+            <div class="container">
+                <div class="intro">
+                    <!-- <h6 class="heading-3 text-brand" data-aos="fade-up">I AM SOFTWARE TRAINER</h6> -->
+                    <h2 class="heading-2" data-aos="fade-up" data-aos-delay="100"> E D U C A T I O N
+                    </h2>
+                </div>
+                <div class="grid three-col-grid">
+                    
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="card card-padding">
+                            <div class="icon"><i class="las la-pencil-ruler"></i></div>
+                            <h4 class="heading-3">Mern FullStack</h4>
+                            <p>✦ Ethnus Code Mithra | 2024</p><br>
+                            <h4 class="heading-3">B Tech/IT </h4>
+                            <p>With percentage of 80% -2023</p>  
+                            <p>Loyola Institute Of Technology 
+                            </p>                          </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="card card-padding">
+                            <div class="icon"><i class="lab la-buffer"></i></div>
+                            
+
+                            <h4 class="heading-3">HSC | 85% - 2019 </h4>
+                            <p> Sri Lakshmi Vidyalaya Matriculation Hr
+                                Sec School</p>
+                            <h4 class="heading-3">SSLC | 94% - 2017</h4>
+                            <p> Bala Mandir Matriculation Hr Sec
+                                School</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <div class="card card-padding">
+                            <div class="icon"><i class="las la-feather"></i></div>
+                            <h4 class="heading-3">L A N G U A G E S </h4>
+                            <p>Proficient in</p>
+                            <p> Tamil</p>
+                            <p> English</p><br>
+                            <form target="_blank" style="border-radius: 50%;"
+                            action="https://drive.google.com/file/d/1A32236HPQripwpGuY2Aa3Y6WELRmOz8k/view?usp=sharing">
+                            <button style="border-radius: 100px; width: 100px; height: 30px; border: none; background-color: cadetblue; color: white;" class="resume">Download CV</button>
+                        </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES -->
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="full-height">
+            <div class="container">
+                <div class="intro">
+                    <h6 class="heading-3 text-brand" data-aos="fade-up">LATEST PROJECTS </h6>
+                    <h2 class="heading-2" data-aos="fade-up" data-aos-delay="100">Shoppee</h2>
+                </div>
+                <div class="grid two-col-grid">
+                    
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="card">
+                            <img src="./src/img/e comerce1.png" alt="">
+                            <div class="card-padding">
+                                <h4 class="heading-3">Home page</h4>
+                                <p>Stay stylish with our latest collection of clothing and accessories for men, women, and kids.</p>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <img src="./src/img/e comerce2.png" alt="">
+                            <div class="card-padding">
+                                <h4 class="heading-3">Login Page</h4>
+                                <p>Enter your username or email address in the designated field.
+                                    Enter your password in the password field.
+                                   </p>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img src="./src/img/e comerce3.jpg" alt="">
+                            <div class="card-padding">
+                                <h4 class="heading-3">Product Page</h4>
+                                <p>Click on any product to view detailed information, including specifications, features, and pricing.
+                                    Add your desired products to your shopping cart for easy checkout.</p>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <div class="card">
+                            <img src="./src/img/e comerce4.jpg" alt="">
+                            <div class="card-padding">
+                                <h4 class="heading-3">kids page</h4>
+                                <p>Shop for adorable clothing and accessories to dress your kids in style. 
+                                    Browse through our kids' categories to discover a world of fun and learning.
+                                </p>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="full-height">
+            <div class="container">
+                <div class="intro">
+                    <!-- <h6 class="heading-3 text-brand" data-aos="fade-up">LATEST PROJECTS </h6> -->
+                    <h2 class="heading-2" data-aos="fade-up" data-aos-delay="100">Job Portal</h2>
+                </div>
+                <div class="grid two-col-grid">
+                    
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="card">
+                            <img src="./src/img/home.png" alt="">
+                            <div class="card-padding">
+                                <h4 class="heading-3">Home page</h4>
+                                <p>Prominent Search Functionality: Allow users to search for jobs by keywords, location, industry, etc.</p>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <img src="./src/img/post job.png" alt="">
+                            <div class="card-padding">
+                                <h4 class="heading-3">Post Job Page</h4>
+                                <p>Enter the jobrole or job location in the field.
+                                    Enter description,salary,Skill sets,Company logo,posting date.
+                                   </p>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img src="./src/img/job details.png" alt="">
+                            <div class="card-padding">
+                                <h4 class="heading-3">Job Details Page</h4>
+                                <p>Click on any job role and company to apply your dream job.
+                                    And select all the field and apply correctly then only the hr can call you back later.</p>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <div class="card">
+                            <img style="height: 300px;" src="./src/img/authentiacation.png" alt="">
+                            <div class="card-padding">
+                                <h4 class="heading-3">Authentication page</h4>
+                                <p>Just click login and the pop up window can show the mail id and you can select whichever you want.
+                                    This will created by using Google Auth provider using firebase.
+                                </p>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- //PORTFOLIO -->
+
+
+          <!-- objective -->
+        <section id="reviews" class="full-height">
+            <div class="container">
+                <div class="intro">
+                    <h6 class="heading-3 text-brand" data-aos="fade-up">Skills</h6>
+                    <h2 class="heading-2" data-aos="fade-up" data-aos-delay="100"> Programming Skills</h2>
+                </div>
+                <div class="grid three-col-grid">
+                    
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="card card-padding">
+                            <!-- <i class="las la-4x text-brand la-quote-left"></i> -->
+                            <h4 class="heading-3 " style="color: rgb(255, 183, 0);">Front-End Development</h4>
+                            <div>⦿ HTML <br>
+                                ⦿ CSS <br>
+                                ⦿ JAVA SCRIPT <br>
+                                ⦿ REACT JS</div><br>
+                            <h4 class="heading-3 " style="color: rgb(255, 183, 0);">Back-End Development
+                            </h4>
+                            <div>⦿ Node.js <br>⦿ Express.js <br>⦿ Python <br>⦿ Java</div><br>
+                           
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="card card-padding">
+                            <!-- <i class="las la-4x text-brand la-quote-left"></i> -->
+                            <h4 class="heading-3 " style="color: rgb(255, 183, 0);">Data Base</h4>
+                            <div>⦿ Mongo DB</div>
+                            <div>⦿ SQL , MySQL</div><br>
+                            <h4 class="heading-3 " style="color: rgb(255, 183, 0);"> Version Control</h4>
+                            <div>⦿ Git</div><br>
+                            <h4 class="heading-3 " style="color: rgb(255, 183, 0);">Collaborative Development</h4>
+                            <div>⦿ GIT HUB <br>
+                                 ⦿ FIRE BASE</div><br>
+                          
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <div class="card card-padding">
+                            <!-- <i class="las la-4x text-brand la-quote-left"></i> -->
+                            <h4 class="heading-3 " style="color: rgb(255, 183, 0);">Additional Skills
+                            </h4>
+                            <div>⦿ C , C++
+                                <br>
+                                ⦿ Microsoft Word <br> ⦿ Microsoft Excel <br> ⦿ Microsoft Power Point <br> ⦿ Canva
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+       
+        <!-- //objective -->
+
+        <!-- CONTACT -->
+        <section id="contact" class="full-height">
+            <div class="container">
+                <div class="intro">
+                    <h6 class="heading-3 text-brand" data-aos="fade-up">Reach out and let's collaborate on something extraordinary!</h6>
+                    <h2 class="heading-2" data-aos="fade-up" data-aos-delay="100">Reach out to me now</h2>
+                </div>
+                <form id="contact-form" class="form" data-aos="fade-up" data-aos-delay="300">
+                    <input type="text" required="required" id="name" class="form-control" placeholder="Enter your name">
+                    <input type="email" required="required" id="email" class="form-control" placeholder="Enter your email">
+                    <textarea class="form-control" id="message" required="required" rows="6" placeholder="Enter your message"></textarea>
+                    <button type="button" onclick="sendemail()" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- //CONTACT -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <p style="color: mediumblue;">Developed  by  Mugilvannan P</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mugilvannan-p-215559266" target="_blank"><i class="lab la-linkedin"></i></a>
+                    <a href="https://www.instagram.com/micky_mouse.23/#" target="_blank"><i class="lab la-instagram"></i></a>
+                    <a href="https://github.com/account" target="_blank"><i class="lab la-github"></i></a>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- //FOOTER -->
+
+    </main>
+    <!-- // Main wrapper end -->
+   
+   
+   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./src/js/app.js"></script>
+    <!-- <script>
+        function sendemail() {
+            var email = document.getElementById("email").value;
+            var name = document.getElementById("name").value;
+            var message = document.getElementById("message").value; 
+    
+            var templateParams = {
+                email: email,
+                name: name,
+                message: message,
+            };
+    
+            emailjs.send('service_ku7x7em', 'template_adr7od6', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    window.alert("Sent successfully!");
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    window.alert("Failed to send.");
+                });
+        }
+    </script> -->
+    
+    
+</body>
+</html>
